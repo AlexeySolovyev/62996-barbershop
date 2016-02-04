@@ -4,17 +4,9 @@ body {
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #f7f4f1;
-  background-color: #070707;
-  background-image: url("../img/main-bg.jpg");
 }
 
-.inner-page {
-  background-color: #f8f5f2;
-  background-image: url("../img/item-bg.png");
-}
-
-.clearfix {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
@@ -22,11 +14,6 @@ body {
 
 .main-header {
   margin-bottom: 60px;
-  background-color: #000000;
-}
-
-.main-header-inner {
-  margin-bottom: 55px;
   background-color: #000000;
 }
 
@@ -40,9 +27,9 @@ body {
   float: left;
   width: 780px;
 }
-
 .page-navigation ul li {
   display: inline-block;
+
 }
 
 .page-navigation a {
@@ -50,12 +37,13 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
-  margin-right: 40px;
+  padding-right: 40px;
 }
 
 .auth-block {
   float: right;
   width: 140px;
+  padding-top: 22px;
 }
 
 .auth-block a {
@@ -64,8 +52,8 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
-  margin-top: 25px;
   padding-left: 70px;
+  text-align: right;
 }
 
 .main-logo {
@@ -120,154 +108,152 @@ h2 {
   background-image: url("../img/footer-bg.png");
 }
 
+.footer a {
+  font-size: 14px;
+  color: #ffffff;
+
+}
+
 .footer-contacts {
   float: left;
   width: 320px;
   margin-right: 60px;
+  color: #ffffff;
 }
 
 .footer-social {
   float: left;
   width: 180px;
+  color: #ffffff;
 }
 
 .footer-copyright {
   float: right;
   width: 180px;
+  color: #ffffff;
 }
 
 .inner-logo {
   float: left;
   width: 111px;
-  margin-top: 20px;
-  margin-left: 15px;
-  margin-right: 20px;
+  padding-top: 22px;
+
 }
 
-.main-title {
-  float: left;
-  margin-bottom: 20px;
-  color: #000000;
+.page-navigation-inner ul {
+margin: 0;
+padding: 0;
 }
 
 .page-navigation-inner {
   float: left;
-  width: 620px;
+  width: 630px;
+  padding-left: 35px;
+  padding-top: 22px;
+  padding-bottom: 20px;
 }
 
 .page-navigation-inner ul li {
   display: inline-block;
+  margin: 0;
 }
 
 .page-navigation-inner a {
-  display: block;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
-  margin-top: 15px;
-  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .breadcrumbs {
-  float: left;
-  margin-top: 10px;
-  margin-bottom: 50px;
-  padding-left: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs ul {
+padding: 0;
 }
 
 .breadcrumbs li {
-  position: relative;
   display: inline-block;
-  margin-bottom: 0;
-  padding-right: 40px;
-  padding-left: 0;
-  vertical-align: top;
-}
-
-.disabled {
-  color: #aba9a7;
 }
 
 .breadcrumbs a {
-  text-decoration: none;
   color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-right: 40px;
+}
+
+.breadcrumbs .disabled {
+  color: #aba9a7;
 }
 
 .filter-form {
   float: left;
   width: 220px;
-  margin-right: 20px;
-
+  font-size: 14px;
 }
+
 fieldset {
-  color: #000000;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.filter-form ul li {
+  display: inline-block;
 }
 legend {
   font-size: 24px;
-  color: #000000;
 }
 
-.main-gallery-photo {
-  margin-bottom: 20px;
-}
-
-.main-gallery-photo img {
-
-  width: 460px;
-  height: 500px;
-  margin: 0;
-}
-
-.small-gallery-photo a {
-  display: inline-block;
-  width: 140px;
-  height: 140px;
-  vertical-align: top;
-  text-decoration: none;
-
-}
-
-.small-gallery-photo a:nth-child(2) {
-  margin: 0 20px;
-}
-
-.small-gallery-photo img {
-  width: 140px;
-  height: 140px;
-}
-
-.shop-tems {
+.shop-items {
+  font-size: 0;
   float: right;
   width: 700px;
+  margin-bottom: 45px;
 }
 
 .item-card {
-  float: left;
+  display: inline-block;
+  vertical-align: top;
   width: 220px;
-  height: 285px;
+  font-size: 16px;
   margin-right: 20px;
   margin-bottom: 20px;
-  background-color: #ffffff;
 }
-.item-card:nth-child(3) {
+
+.item-card:nth-child(3n+3) {
   margin-right: 0;
 }
-.item-card:last-child {
-  margin-right: 0;
+
+.pager {
+  float: left;
+  width: 190px;
 }
 
 .pager li {
   display: inline-block;
 }
 
-.single-item {
+.pager a {
   color: #000000;
-  margin-right: 90px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-right: 30px;
 }
 
 .item-gallery {
   float: left;
   width: 460px;
+}
 
+.item-description {
+  float: right;
+  width: 390px;
 }
