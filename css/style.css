@@ -4,6 +4,9 @@ body {
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+
+  background: #000000 url("../img/main-bg.jpg") no-repeat center top;
+  color: #ffffff;
 }
 
 .clearfix::after {
@@ -27,33 +30,66 @@ body {
   float: left;
   width: 780px;
 }
-.page-navigation ul li {
+.page-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+
+}
+
+.page-navigation li {
   display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
 
 }
 
 .page-navigation a {
+  display: block;
+  padding: 20px 25px;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
-  padding-right: 40px;
+}
+
+.page-navigation a:hover {
+  background: #242424;
 }
 
 .auth-block {
   float: right;
-  width: 140px;
-  padding-top: 22px;
+  max-width: 140px;
 }
 
-.auth-block a {
-  display: block;
+.login {
+  position: relative;
+  display: inline-block;
+  padding: 20px 25px;
+  padding-left: 50px;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
   color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-  padding-left: 70px;
-  text-align: right;
+}
+
+.login:hover {
+  background-color: #242424;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 20px;
+
+  width: 18px;
+  height: 18px;
+
+  background: transparent url("img/sprite.png") no-repeat;
+  background-position: -1px -25px;
 }
 
 .main-logo {
