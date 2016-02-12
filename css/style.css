@@ -335,7 +335,7 @@ h2 {
 
 .footer-copyright {
   float: right;
-  width: 180px;
+  max-width: 180px;
   color: #ffffff;
 }
 
@@ -351,19 +351,50 @@ h2 {
   font-size: 0;
   vertical-align: top;
   text-decoration: none;
-  background: #000000 url("img/sprite.png") no-repeat center;
+  background: #000000 url("../img/sprite.png") no-repeat center;
+}
+
+.social-button:hover {
+  background-color: #ffffff;
 }
 
 .social-btn-vk {
-  background-position: 0px -447px;
+  background-position: 9px -968px;
 }
 
 .social-btn-fb {
-  background-position: 0px -638px;
+  background-position: 15px -690px;
 }
 
 .social-btn-inst {
-  background-position: 0px -313px;
+  background-position: 12px -834px;
+}
+
+.social-btn-vk:hover {
+  background-position: 9px -902px;
+}
+
+.social-btn-fb:hover {
+  background-position: 15px -617px;
+}
+
+.social-btn-inst:hover {
+  background-position: 12px -762px;
+}
+
+.footer-copyright p {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.footer-copyright .btn {
+  margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .inner-logo {
