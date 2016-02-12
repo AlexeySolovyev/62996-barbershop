@@ -4,9 +4,18 @@ body {
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
-
   background: #000000 url("../img/main-bg.jpg") no-repeat center top;
   color: #ffffff;
+}
+
+body.inner-page{
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  background: #f8f5f2 url("../img/item-bg.png");
+  color: #000000;
 }
 
 .clearfix::after {
@@ -35,7 +44,6 @@ body {
   padding: 0;
   list-style: none;
   font-size: 0;
-
 }
 
 .page-navigation li {
@@ -43,7 +51,6 @@ body {
   font-size: 16px;
   line-height: 20px;
   vertical-align: top;
-
 }
 
 .page-navigation a {
@@ -399,35 +406,42 @@ h2 {
 
 .inner-logo {
   float: left;
+  margin-left: 20px;
   width: 111px;
-  padding-top: 22px;
+  padding-top: 18px;
+  padding-right: 20px;
 
+}
+
+.page-navigation-inner {
+  float: left;
+  width: 620px;
 }
 
 .page-navigation-inner ul {
 margin: 0;
 padding: 0;
+list-style: none;
+font-size: 0;
 }
 
-.page-navigation-inner {
-  float: left;
-  width: 630px;
-  padding-left: 35px;
-  padding-top: 22px;
-  padding-bottom: 20px;
-}
-
-.page-navigation-inner ul li {
+.page-navigation-inner li {
   display: inline-block;
-  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
 }
 
 .page-navigation-inner a {
+  display: block;
+  padding: 20px 25px;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
-  padding-right: 40px;
+}
+
+.page-navigation-inner a:hover {
+  background: #242424;
 }
 
 .breadcrumbs {
@@ -468,9 +482,14 @@ fieldset {
   border: 0;
 }
 
-.filter-form ul li {
+.filter-form ul {
   display: inline-block;
 }
+
+.filter-form li {
+  display: inline-block;
+}
+
 legend {
   font-size: 24px;
 }
