@@ -82,22 +82,31 @@ body {
 .login::before {
   content: "";
   position: absolute;
-  top: 28px;
+  top: 20px;
   left: 20px;
 
   width: 18px;
   height: 18px;
 
-  background: transparent url("img/sprite.png") no-repeat;
-  background-position: -1px -25px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: 0 -210px;
+  opacity: 0.3;
+}
+
+.login:hover::before {
+  opacity: 1;
 }
 
 .main-logo {
   width: 368px;
   height: 204px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   margin-bottom: 25px;
+}
+
+.main-logo img {
+  width: 368px;
+  height: 204px;
 }
 
 h1 {
@@ -115,20 +124,53 @@ h2 {
   width: 300px;
   margin-right: 20px;
   margin-bottom: 80px;
+  text-align: center;
 }
 
 .promo-block:last-child {
   margin-right: 0;
 }
 
+.promo-title {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  padding-bottom: 35px;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.promo-block p {
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+.promo-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  transform: rotate(45deg);
+}
+
 .main-content {
+  margin-bottom: 35px;
   padding: 50px 80px;
+  color: #000000;
+  background: url("../img/vertical-line.png") no-repeat center,
+  #f8f5f2 url("../img/item-bg.png");
 
 }
 
 .main-content-left {
   float: left;
-  width: 330px;
+  width: 350px;
+  margin-right: 120px;
 }
 
 .main-content-right {
@@ -136,18 +178,145 @@ h2 {
   width: 300px;
 }
 
+.main-content-title {
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 25px;
+  line-height: 42px;
+}
+
+.main-content p {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.news-description {
+  margin: 0;
+  padding: 0;
+  padding-right: 35px;
+  list-style: none;
+}
+
+.news-description li {
+  margin-bottom: 25px;
+}
+
+.news-description p {
+  margin-bottom: 0;
+}
+
+.news-description time {
+  text-transform: none;
+}
+
+.btn {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px 33px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  vertical-align: top;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #663d15;
+}
+
+.btn:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.btn:disabled:hover {
+  background-color: #000000;
+}
+
+.gallery {
+  position: relative;
+  height: 260px;
+}
+
+.gallery-content {
+  height: 164px;
+  margin: 0;
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+  width: 286px;
+  height: 164px;
+}
+
+.gallery .btn {
+  position: absolute;
+  bottom: 0;
+  width: 140px;
+  margin: 0;
+}
+
+.gallery-prev {
+  left: 0;
+}
+
+.gallery-next {
+  right: 0;
+}
+
+.meeting-form input {
+  float: left;
+  width: 106px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 7px 15px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.meeting-form input:nth-child(2n) {
+  margin-right: 0;
+}
+
+.meeting-form .btn {
+  clear: both;
+  width: 100%;
+}
+
+.meeting-form input:focus {
+  border: 2px solid #663d15;
+}
+
 .footer {
-  margin-top: 60px;
+  margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
-  background-color: #000000;
-  background-image: url("../img/footer-bg.png");
+  color: #000000;
+  background: #232323 url("../img/footer-bg.png");
 }
 
 .footer a {
-  font-size: 14px;
   color: #ffffff;
+}
 
+.footer a:hover {
+  text-decoration: none;
 }
 
 .footer-contacts {
@@ -160,6 +329,7 @@ h2 {
 .footer-social {
   float: left;
   width: 180px;
+  text-align: center;
   color: #ffffff;
 }
 
@@ -167,6 +337,33 @@ h2 {
   float: right;
   width: 180px;
   color: #ffffff;
+}
+
+.footer-social p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+.social-button {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+  background: #000000 url("img/sprite.png") no-repeat center;
+}
+
+.social-btn-vk {
+  background-position: 0px -447px;
+}
+
+.social-btn-fb {
+  background-position: 0px -638px;
+}
+
+.social-btn-inst {
+  background-position: 0px -313px;
 }
 
 .inner-logo {
