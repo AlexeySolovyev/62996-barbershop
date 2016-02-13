@@ -8,7 +8,7 @@ body {
   color: #ffffff;
 }
 
-body.inner-page{
+.inner-page{
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -631,4 +631,79 @@ a.card-btn:active {
 .pager .active:hover {
   color: #000000;
   background: #ffffff;
+}
+
+.item-gallery {
+  float: left;
+  width: 460px;
+  margin-right: 90px;
+}
+
+.main-gallery-photo {
+  margin: 0;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,.2);
+}
+
+.main-gallery-photo img {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.small-gallery-photo a {
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  margin-right: 17px;
+  vertical-align: top;
+  text-decoration: none;
+  box-shadow: 0 0 15px rgba(0,0,0,.2);
+}
+
+.small-gallery-photo a:nth-child(3) {
+  margin-right: 0;
+}
+
+.small-gallery-photo img {
+  width: 140px;
+  height: 140px;
+}
+
+.item-details {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.item-presence {
+  float: left;
+}
+
+.item-id  {
+  float: right;
+  color: #aeaeae;
+}
+
+.item-description {
+  float: right;
+  width: 390px;
+}
+.item-card-price {
+  display: inline-block;
+  width: 190px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.item-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item-list li {
+  margin-bottom: 2px;
+  padding-left: 20px;
+  background: url("../img/sprite.png") no-repeat center;
+  background-position: 0 -1041px;
 }
